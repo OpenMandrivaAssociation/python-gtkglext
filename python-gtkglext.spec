@@ -1,7 +1,7 @@
 %define	libname		pygtkglext
 %define	name		python-gtkglext
 %define	version		1.1.0
-%define	release		%mkrel 3
+%define	release		%mkrel 4
 
 Summary:	Python bindings for GtkGLExt
 Name:		%{name}
@@ -14,7 +14,9 @@ Source:		http://prdownloads.sourceforge.net/sourceforge/gtkglext/%{libname}-%{ve
 BuildRoot:	%_tmppath/%{name}-%{version}
 Requires:	gtkglext, python-opengl
 BuildRequires:	gtkglext-devel
-BuildRequires:  pygtk2.0-devel 
+BuildRequires:  pygtk2.0-devel
+%py_requires
+ 
 %description
 Python bindings for GtkGTLExt
 
@@ -42,8 +44,7 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root)
 %doc AUTHORS ChangeLog COPYING COPYING.LIB INSTALL README README.win32 examples/
-%py_platsitedir/*
+%python_sitearch/gtk-2.0/gtk/gtkgl
+%python_sitearch/gtk-2.0/gtk/gdkgl
 %{_datadir}/pygtk/2.0/defs/*
 %_libdir/pkgconfig/*.pc
-
-
