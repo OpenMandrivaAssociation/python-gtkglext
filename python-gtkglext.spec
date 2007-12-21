@@ -11,6 +11,7 @@ License:	BSD
 Group:		System/Libraries
 URL:		http://www.k-3d.org/gtkglext/Main_Page
 Source:		http://prdownloads.sourceforge.net/sourceforge/gtkglext/%{libname}-%{version}.tar.bz2
+BuildRoot:	%_tmppath/%{name}-%{version}
 Requires:	gtkglext, python-opengl
 BuildRequires:	gtkglext-devel
 BuildRequires:  pygtk2.0-devel
