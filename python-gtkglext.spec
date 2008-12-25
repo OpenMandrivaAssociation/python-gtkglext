@@ -1,7 +1,7 @@
 %define	libname		pygtkglext
 %define	name		python-gtkglext
 %define	version		1.1.0
-%define	release		%mkrel 5
+%define	release		%mkrel 6
 
 Summary:	Python bindings for GtkGLExt
 Name:		%{name}
