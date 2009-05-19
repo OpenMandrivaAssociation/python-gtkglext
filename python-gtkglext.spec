@@ -22,9 +22,6 @@ Python bindings for GtkGTLExt
 
 %prep
 %setup -q -n %{libname}-%{version}
-aclocal
-autoconf
-automake
 
 %build
 %configure2_5x
