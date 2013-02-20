@@ -24,6 +24,7 @@ Python bindings for GtkGTLExt
 %setup -q -n %{libname}-%{version}
 
 %build
+export LIBS="-lpython2.7"
 %configure2_5x
 %make
 
