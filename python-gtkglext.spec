@@ -3,7 +3,7 @@
 Summary:	Python bindings for GtkGLExt
 Name:		python-gtkglext
 Version:	1.1.0
-Release:	10
+Release:	11
 License:	BSD
 Group:		System/Libraries
 URL:		http://www.k-3d.org/gtkglext/Main_Page
